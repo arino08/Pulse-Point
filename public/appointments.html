@@ -1,0 +1,76 @@
+<!-- appointments.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Appointments - PulsePoint</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar">
+        <div class="container">
+            <a class="navbar-brand logo" href="">
+                <img src="assets/img/logo.png" alt="PulsePoint Logo" class="navbar-logo">
+            </a>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog-page.html">Catalog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="appointments.html">Appointments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <button data-bs-target="#navcol-1" data-bs-toggle="collapse" class="navbar-toggler">
+                <span class="visually-hidden">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <main class="page">
+        <section class="clean-block clean-form dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">My Appointments</h2>
+                    <p>View your upcoming appointments with doctors.</p>
+                </div>
+                <div id="appointments-container" class="row">
+                    <!-- Appointments will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('/appointments')
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.getElementById('appointments-container');
+                    container.innerHTML = '';
+
+                    if (Array.isArray(data)) {
+                        data.forEach(appointment => {
+                            const appointmentCard = document.createElement('div');
+                            appointmentCard.className = 'col-md-4';
+                            appointmentCard.innerHTML = `
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Appointment with Dr. ${appointment.doctor_name}</h5>
+                                        <p class="card-text">Specialization: ${appointment.specialization}</p>
+                                        <p class="card-text">Date: ${appointment.appointment_date}</p>
+                                    </div>
+                                </div>
+                            `;
+                            container.appendChild(appointmentCard);
+                        });
+                    } else {
+                        console.error('Expected an array of appointments');
+                    }
+                })
+                .catch(error => console.error('Error fetching appointments:', error));
+        });
+    </script>
+</body>
+</html>

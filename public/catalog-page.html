@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Catalog - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css"> <!-- Add this line -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar">
+        <div class="container">
+            <a class="navbar-brand logo" href="">
+                <img src="assets/img/logo.png" alt="PulsePoint Logo" class="navbar-logo"> <!-- Add class here -->
+            </a>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalog-page.html">Catalog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="appointments.html">Appointments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <button data-bs-target="#navcol-1" data-bs-toggle="collapse" class="navbar-toggler">
+                <span class="visually-hidden">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <main class="page">
+        <section class="clean-block clean-catalog dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 style="--bs-primary: #0d6efd;--bs-primary-rgb: 13,110,253;color: var(--bs-code-color);">Your Healthcare, Answered</h2>
+                    <p>What makes you better? <br>Highly skilled doctors make all the difference!<br><br></p>
+                </div>
+                
+         <div class="content">
+            
+                    <div class="row">
+                        
+                        <div class="col-md-3">
+                            
+                            
+                            <div class="d-none d-md-block">
+                                
+                                <div class="filters">
+                                    <!-- <div class="filter-item">
+                                        <h3>Specialties</h3>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Pediatrician</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-12"><label class="form-check-label" for="formCheck-12">Dermatologist</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-11"><label class="form-check-label" for="formCheck-11">Oncologist</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-10"><label class="form-check-label" for="formCheck-10">Ophthalmologist</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Neurologist</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Cardiologist</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-4"><label class="form-check-label" for="formCheck-4">Psychiatrist</label></div>
+                                    </div>
+                                    <div class="filter-item">
+                                        <h3>Availability</h3>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-5"><label class="form-check-label" for="formCheck-5">Available</label></div>
+                                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-6"><label class="form-check-label" for="formCheck-6">Unavailable</label></div>
+                                    </div>
+                                    <div class="filter-item">
+                                        
+                                    </div> -->
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <input type="text" id="filter-name" class="form-control" placeholder="Name">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="text" id="filter-specialization" class="form-control" placeholder="Specialization">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <button class="btn btn-primary" id="apply-filters">Apply Filters</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            <div class="d-md-none"><a class="btn btn-link d-md-none filter-collapse" data-bs-toggle="collapse" aria-expanded="false" aria-controls="filters" href="#filters" role="button">Filters<i class="icon-arrow-down filter-caret"></i></a>
+                                <div class="collapse" id="filters">
+                                    <div class="filters">
+                                        <div class="filter-item">
+                                            <h3>Specialties</h3>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Pediatrician</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-12"><label class="form-check-label" for="formCheck-12">Dermatologist</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-11"><label class="form-check-label" for="formCheck-11">Oncologist</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-10"><label class="form-check-label" for="formCheck-10">Ophthalmologist</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Neurologist</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Cardiologist</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-4"><label class="form-check-label" for="formCheck-4">Psychiatrist</label></div>
+                                        </div>
+                                        <div class="filter-item">
+                                            <h3>Availability</h3>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-5"><label class="form-check-label" for="formCheck-5">Available</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-6"><label class="form-check-label" for="formCheck-6">Unavailable</label></div>
+                                        </div>
+                                        <div class="filter-item"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row" id="doctors-container">
+                                <!-- Doctors will be dynamically inserted here -->
+                            </div>
+                        </div>
+                        <div class="w-100">
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="registration.html">Sign up</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2024 Copyright Text</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const fetchDoctors = (filters = {}) => {
+                const query = new URLSearchParams(filters).toString();
+                fetch(`/doctors/all?${query}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        const container = document.getElementById('doctors-container');
+                        container.innerHTML = '';
+
+                        if (Array.isArray(data.doctors)) {
+                            data.doctors.forEach(doctor => {
+                                const doctorCard = document.createElement('div');
+                                doctorCard.className = 'col-md-4';
+                                doctorCard.innerHTML = `
+                                    <div class="card">
+                                        <img class="card-img-top" src="${doctor.image}" alt="${doctor.name}">
+                                        <div class="card-body">
+                                            <h5 class="card-title">${doctor.name}</h5>
+                                            <p class="card-text">Specialization: ${doctor.specialization}</p>
+                                            <p class="card-text">${doctor.description}</p>
+                                            <button class="btn btn-primary book-appointment" data-doctor-id="${doctor.id}">Book Appointment</button>
+                                        </div>
+                                    </div>
+                                `;
+                                container.appendChild(doctorCard);
+                            });
+                        } else {
+                            console.error('Expected an array of doctors');
+                        }
+
+                        document.querySelectorAll('.book-appointment').forEach(button => {
+                            button.addEventListener('click', (e) => {
+                                const doctorId = e.target.getAttribute('data-doctor-id');
+                                const appointmentDate = prompt('Enter appointment date (YYYY-MM-DD):');
+                                if (appointmentDate) {
+                                    fetch('/appointments', {
+                                        method: 'POST',
+                                        headers: {
+                                            'Content-Type': 'application/json'
+                                        },
+                                        body: JSON.stringify({ doctor_id: doctorId, appointment_date: appointmentDate })
+                                    })
+                                    .then(response => response.text())
+                                    .then(data => {
+                                        alert('Appointment booked successfully');
+                                    })
+                                    .catch(error => console.error('Error:', error));
+                                }
+                            });
+                        });
+                    })
+                    .catch(error => console.error('Error fetching doctors:', error));
+            };
+
+            document.getElementById('apply-filters').addEventListener('click', () => {
+                const name = document.getElementById('filter-name').value;
+                const specialization = document.getElementById('filter-specialization').value;
+                const filters = {};
+                if (name) filters.name = name;
+                if (specialization) filters.specialization = specialization;
+                fetchDoctors(filters);
+            });
+
+            fetchDoctors();
+        });
+    </script>
+</body>
+
+</html>

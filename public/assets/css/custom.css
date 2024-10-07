@@ -1,0 +1,79 @@
+/* assets/css/custom.css */
+.navbar-logo {
+    height: 100px; /* Adjust the height as needed */
+    max-height: 100px; /* Ensure the logo doesn't exceed this height */
+}
+
+.navbar {
+    padding: 0.25rem 1rem; /* Decrease padding to reduce space above and below the navbar */
+    margin-bottom: 0; /* Remove any margin below the navbar */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+/* Optional: Adjust the body padding to ensure content doesn't overlap with the navbar */
+body {
+    padding-top: 70px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Add underline animation to navbar links */
+.nav-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000; /* Change this color to match your design */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Custom styles for doctor cards */
+.card {
+    margin-bottom: 30px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: contain;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
