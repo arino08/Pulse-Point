@@ -88,11 +88,7 @@ PulsePoint is a web application that allows users to register, log in, view a ca
 
    const connection = mysql.createConnection({
        host: 'localhost',
-       user
-
-:
-
- 'your_mysql_user',
+       user:'your_mysql_user',
        password: 'your_mysql_password',
        database: 'pulsepoint'
    });
